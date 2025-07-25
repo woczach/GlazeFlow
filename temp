@@ -1,0 +1,3 @@
+{'owner': 0, 'hwnd': 1183486, 'title': 'Terminal', 'visible': 1, 'something': '0', 'rect': (-1933, 57, 13, 1023), 'class_name': 'CASCADIA_HOSTING_WINDOW_CLASS'}
+{'owner': 0, 'hwnd': 21890032, 'title': 'IC - R25.2.1-UBP-6.0 TBC - All Documents - Google Chrome', 'visible': 1, 'something': '0', 'rect': (10, 52, 1910, 1028), 'class_name': 'Chrome_WidgetWin_1'}
+{'owner': 0, 'hwnd': 13175474, 'title': 'New Tab - Google Chrome', 'visible': 1, 'something': '0', 'rect': (-2, 45, 1922, 1034), 'class_name': 'Chrome_WidgetWin_1'}
