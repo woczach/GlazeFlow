@@ -4,11 +4,21 @@ import subprocess
 
 def move_workspace(GC, input_string):
     parameters = input_string.split(";")
-    if str(parameters[3]) < str(parameters[2]):
-        #print("left")
+    if int(parameters[3]) < int(parameters[2]) + 1:
+        #print("left left")
         GC.send_command(["glazewm", "command", "focus", "--workspace", parameters[1]])
         GC.send_command(["glazewm",'command', 'move-workspace', '--direction', 'left'])
-    elif str(parameters[3]) > str(parameters[2]):
+        GC.send_command(["glazewm",'command', 'move-workspace', '--direction', 'left'])
+    elif int(parameters[3]) < int(parameters[2]):
+        #print("left left")
+        GC.send_command(["glazewm", "command", "focus", "--workspace", parameters[1]])
+        GC.send_command(["glazewm",'command', 'move-workspace', '--direction', 'left'])
+    elif int(parameters[3]) > int(parameters[2]) + 1:
+        #print("right")
+        GC.send_command(["glazewm","command", "focus", "--workspace", parameters[1]])
+        GC.send_command(["glazewm",'command', 'move-workspace', '--direction', 'right'])
+        GC.send_command(["glazewm",'command', 'move-workspace', '--direction', 'right'])
+    elif int(parameters[3]) > int(parameters[2]):
         #print("right")
         GC.send_command(["glazewm","command", "focus", "--workspace", parameters[1]])
         GC.send_command(["glazewm",'command', 'move-workspace', '--direction', 'right'])
