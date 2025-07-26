@@ -11,8 +11,9 @@ import asyncio
 GC = GlazeClient()
 #GC.connect()
 
-query = "1 te"
+query = "0 Note"
 flows = do_flow_glaze(GC, query)
 for flow in flows:
     print(flow)
-    move_workspace(GC, flow['JsonRPCAction']['parameters'])
+    hwnd = flow['JsonRPCAction']['parameters'][0] if isinstance(flow['JsonRPCAction']['parameters'], list) else flow['JsonRPCAction']['parameters']
+    move_workspace(GC, hwnd)
