@@ -1,0 +1,12 @@
+{
+    "ID": "GlazeFlow",
+    "ActionKeyword": "gf",
+    "Name": "Gf",
+    "Description": "Python Hello World example plugin",
+    "Author": "parasolnikov",
+    "Version": "1.0.0",
+    "Language": "python",
+    "Website": "https://github.com/test",
+    "IcoPath": "Images\\app.png",
+    "ExecuteFileName": "main.py"
+}
